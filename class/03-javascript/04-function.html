@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    
+    <title>인증번호</title>
+    <link href="04-function.css" rel="stylesheet" />
+    <script>
+        const sendAuth = () =>{
+    const bbb = String(Math.floor(Math.random() *1000000)).padStart(6,"0")
+    document.getElementById("aaa").innerText = bbb
+   
+//         function sendAuth(){
+//     const bbb = String(Math.floor(Math.random() *1000000)).padStart(6,"0")
+//     document.getElementById("aaa").innerText = bbb
+// }
+}
+    </script>
+</head>
+<body>
+    <div class="wrapper">
+        <div id="aaa">000000
+        </div>
+
+        <div><button onclick="sendAuth()">인증번호 전송</button>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
